@@ -1,7 +1,7 @@
 body{
     background-image: url(images1/bgimg.jpg);
     background-size: cover;
-    background-position: auto;
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
 }
 .pic{
@@ -84,4 +84,12 @@ a{
 }
   a:hover{
     color: #FFFFFF;
+  }
+  @media (max-width:2000px) and (min-width:200px)  {
+    body{
+      height: 100px;
+      width: 100px;
+      background-attachment: fixed;
+    }
+    
   }
