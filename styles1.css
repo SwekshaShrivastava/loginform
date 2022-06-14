@@ -85,7 +85,7 @@ a{
   a:hover{
     color: #FFFFFF;
   }
-  @media (max-width:2000px) and (min-width:200px)  {
+  @media (max-width:2000px) and (min-width:100px)  {
     body{
       height: 100px;
       width: 100px;
