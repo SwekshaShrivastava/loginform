@@ -16,14 +16,30 @@
         <h1>Login</h1>
         <form>
             <p><i class="fa-solid fa-user"></i>Username</p>
-            <input type="text" name="fname" placeholder=" Enter Username">
+            <input type="text" name="fname" id="fname1" placeholder=" Enter Username">
             <p><i class="fa-solid fa-lock"></i>Password</p>
-            <input type="password" name="pass" placeholder="Enter Password"><br>
+            <input type="password" name="pass" id="pwd" placeholder="Enter Password"><br>
             <a href="#">Forgot Password?</a><br>
-            <button class="btn">Login</button>
+            <button class="btn" onclick="message()">Login</button>
         </form>
 
     </div>
-    
+    <script>
+        function message()
+        {
+        var a = document.getElementById("fname1").value;
+        var b = document.getElementById("pwd").value;
+        if(a=="")
+        {
+            alert("enter your username");
+        }
+        else if(b=="")
+        {
+            alert("enter your password");
+        }
+        else
+          alert("Login Successful");
+       }
+    </script>
 </body>
 </html>
